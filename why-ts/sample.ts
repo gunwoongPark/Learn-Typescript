@@ -3,3 +3,5 @@ function add(a: number, b: number): number {
 }
 let result = add(10, 20);
 result.toLocaleString();
+
+// add(10, "20");
