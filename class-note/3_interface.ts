@@ -47,6 +47,22 @@ let obj: StringRegexDictionary = {
   cssFile: /\.css$/,
   jsFile: /\.js$/,
 };
-obj["cssFile"] = "a";
+// obj["cssFile"] = "a";
 
 Object.keys(obj).forEach(function (value) {});
+
+// 인터페이스 확장
+interface Person {
+  name: string;
+  age: number;
+}
+
+interface Developer extends Person {
+  language: string;
+}
+
+let woong2: Developer = {
+  language: "ts",
+  age: 100,
+  name: "gunwoong",
+};
