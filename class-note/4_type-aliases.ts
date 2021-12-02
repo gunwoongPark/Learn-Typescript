@@ -8,7 +8,7 @@ type Person = {
   age: number;
 };
 
-var gunwoong: Person = {
+const gunwoong: Person = {
   name: "건웅",
   age: 25,
 };
