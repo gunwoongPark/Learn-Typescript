@@ -4,7 +4,8 @@
 // logMessage("hello");
 // logMessage(100);
 
-let gunwoong: string | number | boolean;
+// let gunwoong: string | number | boolean;
+
 function logMessage(value: string | number) {
   if (typeof value === "number") {
     value.toLocaleString();
@@ -27,8 +28,15 @@ interface Person {
 }
 
 function askSomeone(someone: Developer | Person) {
-  if (typeof someone === "Developer") {
-  }
+  someone.name;
   someone.skill;
   someone.age;
 }
+function askSomeone(someone: Developer & Person) {
+  someone.name;
+  someone.skill;
+  someone.age;
+}
+
+// let gunwoong: string | number | boolean;
+// let woong: string & number & boolean;
