@@ -27,16 +27,21 @@ interface Person {
   age: number;
 }
 
-function askSomeone(someone: Developer | Person) {
-  someone.name;
-  someone.skill;
-  someone.age;
-}
+// function askSomeone(someone: Developer | Person) {
+//   //   someone.name;
+//   //   someone.skill;
+//   //   someone.age;
+// }
+// askSomeone({ name: "디벨로퍼", skill: "웹 개발" });
+// askSomeone({ name: "건웅", age: 100 });
+
 function askSomeone(someone: Developer & Person) {
   someone.name;
   someone.skill;
   someone.age;
 }
+askSomeone({ name: "디벨로퍼", skill: "웹 개발", age: 25 });
+// askSomeone({ name: "건웅", age: 100 });
 
 // let gunwoong: string | number | boolean;
 // let woong: string & number & boolean;
