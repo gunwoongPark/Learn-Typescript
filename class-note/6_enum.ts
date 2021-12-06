@@ -21,7 +21,6 @@ function askQuestion(answer: Answer) {
   }
 }
 askQuestion(Answer.Yes);
-askQuestion("Yes");
 // askQuestion("예스");
 // askQuestion("y");
 // askQuestion("Yes");
