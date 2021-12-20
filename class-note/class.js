@@ -1,3 +1,9 @@
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+let woong = new Person("건웅", 25);
+
 class Person {
   // 클래스 로직
   constructor(name, age) {
